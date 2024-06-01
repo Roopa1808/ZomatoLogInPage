@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: rgba(27, 28, 28, 0.882);
+}
+
+.zomato-login div {
+    margin: 20px;
+}
+
+.zomatopage-creation {
+    height: 70vh;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.zomato-header {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #474646f0;
+
+}
+
+.closeicon {
+    float: right;
+    size: 33px;
+    color: black;
+    font-weight: bold;
+}
+
+.phonenumber button {
+    border: 1px solid #b3b1b1c5;
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+#flagimage {
+    height: 30px;
+}
+
+.phonenumber select {
+    height: 100%;
+    width: 80px;
+    border: transparent;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: white;
+    color: #666363fa;
+    margin: 10px;
+}
+
+.line {
+    border: 0.2px solid #e2d9d9db;
+    height: 30px;
+    width: 1px;
+    line-height: 35px;
+}
+
+.phonenumber input {
+    height: 43px;
+    width: 100%;
+    margin-left: -10px;
+    font-size: 18px;
+    color: gray;
+    border-style: none;
+}
+
+input:hover {
+    outline-color: rgb(10, 131, 91);
+    border-radius: 5px;
+    color: black;
+}
+
+.password button {
+    height: 45px;
+    width: 100%;
+    background-color: rgb(236, 56, 56);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: transparent;
+    color: white;
+    margin-top: 15px;
+    opacity: 0.9;
+
+}
+
+.password button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 12, 12);
+    opacity: 0.8;
+
+}
+
+h5 {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    font-size: 16px;
+    align-items: center;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.816);
+    column-gap: 0.3rem;
+    font-family: Helvetica, sans-serif;
+    margin-top: -5 px;
+}
+
+h5::before,
+h5::after {
+    content: "";
+    height: 1px;
+    width: 12.6vw;
+    background-color: rgba(220, 220, 220, 0.626);
+    display: block;
+}
+
+h5::before {
+    margin-left: 20px;
+}
+
+.email button {
+    border: 1px solid #beb8b8;
+    height: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(95, 92, 92);
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 16px;
+}
+
+#email {
+    height: 30px;
+}
+
+.email button:hover {
+    cursor: pointer;
+}
+
+.google button {
+    border: 1px solid #beb8b8;
+    height: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #666363fc;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 16px;
+    text-indent: 3px;
+
+}
+
+.google button:hover {
+    cursor: pointer;
+    background-color: rgba(127, 135, 223, 0.034);
+    border: 1px solid rgba(127, 135, 223, 0.685);
+
+}
+
+#google {
+    height: 25px;
+    margin-left: -5px;
+}
+
+h4 {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+    font-size: 16px;
+    align-items: center;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.816);
+    font-family: Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+h4::after {
+    content: "";
+    height: 0.8px;
+    width: 10%;
+    background-color: rgba(220, 220, 220, 0.567);
+    display: block;
+}
+
+#footer-text {
+    color: rgba(63, 63, 63, 0.99);
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+
+}
+
+a {
+    color: rgb(202, 0, 0);
+    opacity: 0.7;
+    text-decoration: none;
+
+
+}
+
+@media screen and (max-width:600px) {
+    .zomatopage-creation {
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h4::after {
+        height: 0.8px;
+        width: 100vw;
+    }
+
+    h5::before,
+    h5::after {
+        height: 1px;
+        width: 44vw;
+    }
+}
